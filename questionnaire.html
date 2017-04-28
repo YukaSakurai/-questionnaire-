@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>アンケートサイト</title>
+
+</head>
+<script>
+	function(){
+		var namae = document.getElementById("namae");
+		var gakka = document.getElementById("gakka");
+		var q1 = document.getElementById("q1");
+		var q2 = document.getElementById("q2");
+		var q3 = document.getElementById("q3");
+
+		if(namae.value == ""){
+			errmsg ;
+		}
+		if(gakka.value == ""){
+			errmsg ;
+		}					
+		if(q1.value == ""){
+			errmsg ;
+		}
+		if(q2.value == ""){
+			errmsg ;
+		}
+		if(q3.value == ""){
+			errmsg ;
+		}
+	}
+
+</script>
+<body>
+	<h1>アンケートやで！！</h1>
+	<small>漏れなく入力してねん。</small>
+	<form action="" method="">
+	<h3>▽あなたの情報を入力してね</h3>
+	お名前 :<input type="text" id="namae" name="namae" required><br>
+	学　年 :<input type="radio" name="1tmode" id="iti" checked>１年
+			<input type="radio" name="2tmode" id="ni">２年<br>
+	学　科 :<input type="text" id="gakka" name="gakka" required><br><br>
+
+	<h3>▽問１：～～～～</h3>
+	回答 :<textarea name="q1" rows="4" cols="40" required></textarea><br>
+	評価 :<input type="radio" name="tmode" id="one" checked>１
+		<input type="radio" name="tmode" id="two">２
+		<input type="radio" name="tmode" id="three">３
+		<input type="radio" name="tmode" id="four">４
+		<input type="radio" name="tmode" id="five">５<br><br>	
+
+	<h3>▽問２：～～～～</h3>
+	回答 :<textarea name="q2" rows="4" cols="40" required></textarea><br>
+	評価 :<input type="radio" name="tmode1" id="one" checked>１
+		<input type="radio" name="tmode1" id="two">２
+		<input type="radio" name="tmode1" id="three">３
+		<input type="radio" name="tmode1" id="four">４
+		<input type="radio" name="tmode1" id="five">５<br><br>
+
+	<h3>▽問３：～～～～</h3>
+	回答 :<textarea name="q3" rows="4" cols="40" required></textarea><br>
+	評価 :<input type="radio" name="tmode2" id="one" checked>１
+		<input type="radio" name="tmode2" id="two">２
+		<input type="radio" name="tmode2" id="three">３
+		<input type="radio" name="tmode2" id="four">４
+		<input type="radio" name="tmode2" id="five">５<br><br>	
+	<br><br>
+	<input type="submit" value="確認">
+	</form>
+</body>
+</html>
